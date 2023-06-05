@@ -35,30 +35,30 @@
                <div class="input-pair">
                   <div class="input-container first-name-container">
                      <label class="label">FIRST NAME</label>
-                     <input type="text" class="input-text" name="first-name" pattern="[a-zA-Z- ]" placeholder="John"
-                        required>
+                     <input type="text" class="input-text" name="first-name" pattern="[a-zA-Z- ]+" placeholder="John">
                   </div>
 
                   <div class="input-container last-name-container">
                      <label class="label">LAST NAME</label>
-                     <input type="text" class="input-text" name="last-name" pattern="[a-zA-Z- ]" placeholder="Smith"
-                        required>
+                     <input type="text" class="input-text" name="last-name" pattern="[a-zA-Z- ]+" placeholder="Smith">
                   </div>
                </div>
 
                <div class="input-pair">
                   <div class="input-container email-container">
                      <label class="label">EMAIL</label>
-                     <input type="text" class="input-text" name="last-name"
-                        pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])"
-                        placeholder="someone@example.com" required>
+                     <input title="someone@example.com" type="text" class="input-text" name="last-name"
+                        pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                        placeholder="someone@example.com">
                   </div>
 
                   <div class="input-container phone-number-container">
                      <label class="label">PHONE NUMBER</label>
-                     <input title="Must be at least 10 characters" type="text" class="input-text" name="last-name"
+                     <input
+                        title="National formats:&#013;0644444444 | 06 44 44 44 44&#013;06-44-44-44-44 | 06.44.44.44.44&#013;06 44.44-44.44&#013;&#013;International formats:&#013;+33644444444 | +336.44.44.44.44&#013;+33 6.44.44.44.44 | 0033644444444&#013;00336.44.44.44.44 | 0033 6.44.44.44.44&#013;+33(0)644444444 | +33 (0) 644444444"
+                        type="text" class="input-text" name="last-name"
                         pattern="^(?:(?:(?:\+|00)33\D?(?:\D?\(0\)\D?)?)|0){1}[1-9]{1}(?:\D?\d{2}){4}$"
-                        placeholder="06 01 02 03 04" required>
+                        placeholder="06 01 02 03 04">
                      <p class="input-hint">Must be at least 10 characters</p>
                   </div>
                </div>
@@ -66,22 +66,24 @@
                <div class="input-pair">
                   <div class="input-container password-container">
                      <label class="label">PASSWORD</label>
-                     <input title="Must be at least 8 characters" type="password" class="input-text error"
-                        name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-                        placeholder="At least 8 characters" required>
+                     <input
+                        title="Must be at least 8 characters.&#013;Must contain at least :&#013;1 uppercase letter,&#013;1 lowercase letter,&#013;1 number.&#013;Can contain special characters."
+                        type="password" class="input-text error" name="password"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}" placeholder="At least 8 characters"
+                        required>
                      <p class="input-hint">Must be at least 8 characters</p>
                   </div>
 
                   <div class="input-container password-confirm-container">
                      <label class="label">CONFIRM PASSWORD</label>
-                     <input type="password" class="input-text error" name="password-confirm" required>
+                     <input type="password" class="input-text error" name="password-confirm">
                      <p class="input-hint"></p>
                   </div>
                </div>
             </fieldset>
             <div class="submit-section">
                <input type="submit" class="create-account-btn" value="Create Account">
-               <p class="alr-hv-acc">Already have an account? <a href="">Log In</a></p>
+               <p class="alr-hv-acc">Already have an account? <a href="#">Log In</a></p>
             </div>
          </form>
       </div>
