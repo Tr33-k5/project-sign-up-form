@@ -35,36 +35,43 @@
                <h2 class="legend">Lets' do this!</h2>
                <div class="input-container first-name-container">
                   <label class="label">FIRST NAME</label>
-                  <input type="text" class="input-text" name="first-name">
+                  <input type="text" class="input-text" name="first-name" pattern="[a-zA-Z- ]" required>
                </div>
 
                <div class="input-container last-name-container">
                   <label class="label">LAST NAME</label>
-                  <input type="text" class="input-text" name="last-name">
+                  <input type="text" class="input-text" name="last-name" pattern="[a-zA-Z- ]" required>
                </div>
 
                <div class="input-container email-container">
                   <label class="label">EMAIL</label>
-                  <input type="text" class="input-text" name="last-name">
+                  <input type="text" class="input-text" name="last-name"
+                     pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])"
+                     required>
                </div>
 
                <div class="input-container phone-number-container">
                   <label class="label">PHONE NUMBER</label>
-                  <input type="text" class="input-text" name="last-name">
+                  <input title="Must be at least 10 characters" type="text" class="input-text" name="last-name"
+                     pattern="^(?:(?:(?:\+|00)33\D?(?:\D?\(0\)\D?)?)|0){1}[1-9]{1}(?:\D?\d{2}){4}$" required>
+                  <p class="input-hint">Must be at least 10 characters</p>
                </div>
 
                <div class="input-container password-container">
                   <label class="label">PASSWORD</label>
-                  <input type="password" class="input-text error" name="password">
+                  <input title="Must be at least 8 characters" type="password" class="input-text error" name="password"
+                     pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                  <p class="input-hint">Must be at least 8 characters</p>
                </div>
 
                <div class="input-container password-confirm-container">
                   <label class="label">CONFIRM PASSWORD</label>
-                  <input type="password" class="input-text error" name="password-confirm">
+                  <input type="password" class="input-text error" name="password-confirm" required>
+                  <p class="input-hint"></p>
                </div>
             </fieldset>
             <div class="submit-section">
-               <input type="submit" class="create-account-btn" value="Create Account">
+               <input type="button" class="create-account-btn" value="Create Account">
                <p class="alr-hv-acc">Already have an account? <a href="">Log In</a></p>
             </div>
          </form>
