@@ -145,8 +145,12 @@ label {
 .input-text {
    margin-right: 10px;
    max-width: 230px;
-   border: 2px solid #E5E7EB;
+   border: 2px solid rgb(206, 208, 212);
    border-radius: 5px;
+}
+
+.input-text::placeholder {
+   color: rgba(131, 131, 131, 0.856);
 }
 
 .input-text:focus {
@@ -159,7 +163,7 @@ label {
    min-width: 230px;
    font-size: 1rem;
    font-weight: bold;
-   color: rgba(130, 130, 130, 0.7);
+   color: rgba(130, 130, 130, 0.79);
 }
 
 .first-name-container {
