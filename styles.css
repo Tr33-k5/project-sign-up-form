@@ -53,7 +53,7 @@ body {
 .logo-name {
    font-family: norse-bold-font, sans-serif;
    font-size: 90px;
-   font-weight: light;
+   font-weight: lighter;
    color: white;
 }
 
@@ -66,7 +66,7 @@ body {
 
 .copyright {
    font-size: 1rem;
-   font-weight: light;
+   font-weight: lighter;
    min-width: 160px;
    color: white;
 }
